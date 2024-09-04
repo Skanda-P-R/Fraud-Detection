@@ -7,14 +7,16 @@ The model is 99.922% accurate in predicting if a certain case is fraudulent or n
 2. Next run<br>```python server.py```<br>This starts a Flask Server to which you can send JSON requests to.<br>The JSON Request format is:<br>
 ```
 {
-"amount": 0.0,
-"oldbalanceOrg": 0.0,
-"newbalanceOrig": 0.0,
-"CASH_OUT": 0.0,
-"CASH_IN": 0.0,
-"DEBIT": 0.0,
-"PAYMENT": 0.0,
-"TRANSFER": 0.0
+
+  "amount": 0.0,
+  "oldbalanceOrg": 0.0,
+  "newbalanceOrig": 0.0,
+  "CASH_OUT": 0.0,
+  "CASH_IN": 0.0,
+  "DEBIT": 0.0,
+  "PAYMENT": 0.0,
+  "TRANSFER": 0.0
+
 }
 ```
 <br>The URL to which you send POST request will be like this:<br> ```http://127.0.0.1:5000/predict```
